@@ -1,0 +1,11 @@
+##處理時間問題
+library(stringi)
+##查詢日期相關stri_datetime_fields方法
+DateSummary<-stri_datetime_fields(Sys.Date())
+DateSummary
+##今年第幾周
+DateSummary$WeekOfYear
+##這個月第幾周
+DateSummary$WeekOfMonth
+##今年第幾天
+DateSummary$DayOfYear
